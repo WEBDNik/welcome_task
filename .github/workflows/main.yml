@@ -1,7 +1,7 @@
 name: My-GitHubActions
 
 
-on: [commit_comment]
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
