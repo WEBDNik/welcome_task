@@ -1,7 +1,7 @@
 name: My-GitHubActions
 
 env:
-  DEPLOY-PACKAGE-NAME : "sphinx-deplo-ver-${{ github.sha }}" 
+  DEPLOY-PACKAGE-NAME : "sphinx-ver: ${{ github.sha }}" 
 on:
   push:
     branches: [ main ]
