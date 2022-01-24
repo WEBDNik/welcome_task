@@ -1,0 +1,19 @@
+name: My-GitHubActions
+
+env:
+  DEPLOY-PACKAGE-NAME : "sphinx-deplo-ver-${{ github.sha }}" 
+on:
+  push:
+    branches: [ main ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Execute few commands
+        run: |
+          echo "Hello, world!"
+          echo "Deploy package name: ${{ env.DEPLOY-PACKAGE-NAME }}"
