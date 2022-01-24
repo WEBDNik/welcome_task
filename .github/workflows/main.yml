@@ -1,19 +1,16 @@
 name: My-GitHubActions
 
-env:
-  DEPLOY-PACKAGE-NAME : "sphinx-ver: ${{ github.sha }}" 
-on:
-  push:
-    branches: [ main ]
 
-
+on: [commit_comment]
 jobs:
-  build:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-
-
     steps:
-      - name: Execute few commands
+
+      - name: List files in the repository
         run: |
-          echo "Hello, world!"
-          echo "Deploy package name: ${{ env.DEPLOY-PACKAGE-NAME }}"
+          ls ${{ github.workspace }}
+      
+
+
+
